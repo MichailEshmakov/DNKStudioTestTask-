@@ -14,11 +14,10 @@ public class PooledSpawner : MonoBehaviour
 
     private IEnumerator Start()
     {
-        while (true)
+        while (enabled)
         {
             // TODO: separate spawning?
             Vector2 newObjectPosition = ChoosePosition();
-            Debug.Log(newObjectPosition);
             Instantiate(_prefab, newObjectPosition, Quaternion.identity, _container);
             yield return new WaitForSeconds(_distanceBetween / _rideSpeed.Value);
         }

@@ -481,6 +481,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2277299479921096776}
   - component: {fileID: 3761470725638271547}
+  - component: {fileID: 6786759449228400704}
+  - component: {fileID: 6945602371952976525}
   m_Layer: 0
   m_Name: TubesPair
   m_TagString: Untagged
@@ -522,3 +524,42 @@ MonoBehaviour:
   _aboveTube: {fileID: 4483172357171642599}
   _underTube: {fileID: 2807991310113094310}
   _gapTrigger: {fileID: 6085387852900424222}
+--- !u!50 &6786759449228400704
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8144740141410007880}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!114 &6945602371952976525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8144740141410007880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e0eb3181d06fd4479ad14215eca61fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

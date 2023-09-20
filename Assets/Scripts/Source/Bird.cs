@@ -12,7 +12,7 @@ public class Bird : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0)) // TODO: separate input
+        if (Input.GetMouseButtonDown(0))
         {
             _rigidbody.AddForce(Vector2.up * _impulseForce, ForceMode2D.Impulse);
             Jumped?.Invoke();

@@ -27,7 +27,6 @@ public class DifficultyLoader : MonoBehaviour
     public void Save(Difficulty difficulty)
     {
         _difficulty = difficulty;
-        Debug.Log(difficulty.GetType().FullName);
         PlayerPrefs.SetString(Key, difficulty.GetType().FullName);
     }
 

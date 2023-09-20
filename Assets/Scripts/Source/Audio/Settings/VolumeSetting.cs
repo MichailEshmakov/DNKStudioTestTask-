@@ -47,14 +47,12 @@ public class VolumeSetting : MonoBehaviour
     {
         _isOff = PlayerPrefs.HasKey(IsOffKey) && (PlayerPrefs.GetInt(IsOffKey) > 0);
         _volume = Mathf.Clamp(PlayerPrefs.GetFloat(VolumeKey, _defaultVolume), VolumeSettingUtil.MinVolume, VolumeSettingUtil.MaxVolume);
-        Debug.Log($"Loaded: {_volume}");
     }
 
     private void SaveValues()
     {
         PlayerPrefs.SetInt(IsOffKey, _isOff ? 1 : 0);
         PlayerPrefs.SetFloat(VolumeKey, _volume);
-        Debug.Log($"Saved: {_volume}");
     }
 
     private void SetMixerValue()

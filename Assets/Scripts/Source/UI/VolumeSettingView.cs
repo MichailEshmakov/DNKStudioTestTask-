@@ -20,7 +20,6 @@ public class VolumeSettingView : MonoBehaviour
 
     public void Init(float value, bool isOff)
     {
-        Debug.Log($"Init: {value} {isOff}");
         RemoveListeners();
 
         _previousValue = value;
